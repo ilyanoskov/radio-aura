@@ -4,6 +4,10 @@ import styled from 'react-emotion';
 import Header from './Header';
 import Hero from './Hero';
 import AboutUs from './AboutUs';
+import Shows from './Shows';
+import Team from './Team';
+import Contacts from './Contacts';
+
 
 const Container = styled.div`
   display: flex;
@@ -17,7 +21,10 @@ const Home = () => {
     <div>
       <Header />
       <Hero />
+      <Shows />
+      <Team />
       <AboutUs />
+      <Contacts />
     </div>
   );
 };
