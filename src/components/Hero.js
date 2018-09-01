@@ -11,8 +11,11 @@ const Container = styled.div`
   text-align: center;
 `;
 
-
-
-const Hero = () => (<Container> <Heading h="h1"> Radio Aura Stuff </Heading></Container>);
+const Hero = () => (
+  <Container>
+    {' '}
+    <Heading h="h1"> Radio Aura Stuff </Heading>
+  </Container>
+);
 
 export default Hero;
