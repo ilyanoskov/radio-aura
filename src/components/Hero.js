@@ -14,7 +14,14 @@ const Container = styled.div`
 const Hero = () => (
   <Container>
     {' '}
-    <Heading h="h1"> Radio Aura Stuff </Heading>
+    <div>
+      <Heading h="h1"> This is Radio AURA </Heading>
+      <Heading h="h1"> We know good music </Heading>
+      <Heading h="h1"> Since 1992 </Heading>
+    </div>
+    <div>
+      <Heading h="h1"> MUSIC PLAYER GOES HERE</Heading>
+    </div>
   </Container>
 );
 

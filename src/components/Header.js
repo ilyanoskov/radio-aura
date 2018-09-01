@@ -27,9 +27,6 @@ export default class Example extends React.Component {
     return (
       <div>
         <Navbar color="#3C1041" light expand="md">
-          <NavbarBrand style={{ color: 'yellow' }} href="/">
-            Radio Aura
-          </NavbarBrand>
           <NavbarToggler
             onClick={this.toggle}
             style={{ color: 'yellow', border: '1px solid yellow' }}
