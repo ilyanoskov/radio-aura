@@ -14,6 +14,15 @@ const Container = styled('div')`
 const Image = styled('img')`
   height: 150px;
   width: 150px;
+
+  margin: 10px;
+  transition: 0.2s ease;
+
+  :hover {
+    height: 170px;
+    width: 170px;
+    transition: 0.2s ease;
+  }
 `;
 
 const TeamMember = ({ name, imageUrl }) => (
