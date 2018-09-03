@@ -9,6 +9,10 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const Hero = () => (

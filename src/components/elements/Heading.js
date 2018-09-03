@@ -6,6 +6,10 @@ const Container = styled.div`
   color: yellow;
   font-family: 'Ostrich Sans';
   font-weight: 900 !important;
+
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 const Heading = ({ h, style, children }) => {

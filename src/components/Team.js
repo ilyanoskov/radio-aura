@@ -14,12 +14,16 @@ const Container = styled('div')`
 
 const StyledDiv = styled('div')`
   display: block;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Team = ({ djs, sales, producers }) => {
   return (
-    <Section id="team">
-      <StyledDiv>
+    <StyledDiv>
+      <Section id="team">
         <Heading h="h1" style={{ padding: '0' }}>
           {' '}
           Team{' '}
@@ -43,8 +47,8 @@ const Team = ({ djs, sales, producers }) => {
           <TeamMember />
           <TeamMember />
         </Container>
-      </StyledDiv>
-    </Section>
+      </Section>
+    </StyledDiv>
   );
 };
 

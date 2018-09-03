@@ -22,6 +22,10 @@ const StyledAnchorLink = styled(AnchorLink)`
   :hover {
     color: yellow;
   }
+
+  @media only screen and (max-width: 768px) {
+    ${props => (props.mhidden ? 'display: none' : '')};
+  }
 `;
 
 export default class Example extends React.Component {
@@ -31,7 +35,9 @@ export default class Example extends React.Component {
         <Navbar color="#3C1041" light expand="md">
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <StyledAnchorLink href="#team">Team</StyledAnchorLink>
+              <StyledAnchorLink href="#team" mhidden>
+                Team
+              </StyledAnchorLink>
 
               <StyledAnchorLink href="#contacts">Contact</StyledAnchorLink>
               <StyledAnchorLink href="#about">About</StyledAnchorLink>
