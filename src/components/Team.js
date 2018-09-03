@@ -18,7 +18,7 @@ const StyledDiv = styled('div')`
 
 const Team = ({ djs, sales, producers }) => {
   return (
-    <Section>
+    <Section id="team">
       <StyledDiv>
         <Heading h="h1" style={{ padding: '0' }}>
           {' '}
