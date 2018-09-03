@@ -35,11 +35,19 @@ export default class Example extends React.Component {
         <Navbar color="#3C1041" light expand="md">
           <Nav className="ml-auto" navbar>
             <NavItem>
+              <StyledAnchorLink href="#shows" mhidden>
+                Shows & Podcasts
+              </StyledAnchorLink>
+            </NavItem>
+            <NavItem>
               <StyledAnchorLink href="#team" mhidden>
                 Team
               </StyledAnchorLink>
-
+            </NavItem>
+            <NavItem>
               <StyledAnchorLink href="#contacts">Contact</StyledAnchorLink>
+            </NavItem>
+            <NavItem>
               <StyledAnchorLink href="#about">About</StyledAnchorLink>
             </NavItem>
           </Nav>
