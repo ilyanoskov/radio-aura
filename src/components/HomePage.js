@@ -25,9 +25,9 @@ const Container = styled.div`
 
 class Home extends React.Component {
   state = {
-    djs: [],
-    sales: [],
-    producers: []
+    djs: { items: [] },
+    sales: { items: [] },
+    producers: { items: [] }
   };
 
   componentDidMount() {
@@ -56,14 +56,14 @@ class Home extends React.Component {
   render() {
     const { djs, producers, sales } = this.state;
     return (
-      <div>
+      <Container>
         <Header />
         <Hero />
         <Shows />
         <Team {...{ djs, sales, producers }} />
         <AboutUs />
         <Contacts />
-      </div>
+      </Container>
     );
   }
 }
