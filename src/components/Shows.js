@@ -4,10 +4,16 @@ import Section from './elements/Section';
 
 const Shows = () => (
   <Section id="shows">
-    <Heading h="h1" style={{ padding: 0 }}>
+    {/*
+    
+    
+        <Heading h="h1" style={{ padding: 0 }}>
       {' '}
       Shows & Podcasts{' '}
     </Heading>
+    
+    
+     */}
   </Section>
 );
 

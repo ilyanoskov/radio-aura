@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'react-emotion';
-import Heading from './elements/Heading';
+import Heading from '../elements/Heading';
+
+import Radio from './radio';
 
 const Container = styled.div`
   height: 700px;
@@ -23,9 +25,7 @@ const Hero = () => (
       <Heading h="h1"> We know good music </Heading>
       <Heading h="h1"> Since 1992 </Heading>
     </div>
-    <div>
-      <Heading h="h1"> MUSIC PLAYER GOES HERE</Heading>
-    </div>
+    <Radio />
   </Container>
 );
 

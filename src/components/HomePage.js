@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'react-emotion';
 
 import Header from './Header';
-import Hero from './Hero';
+import Hero from './Hero/index';
 import AboutUs from './AboutUs';
 import Shows from './Shows';
 import Team from './Team';

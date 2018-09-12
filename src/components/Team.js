@@ -11,6 +11,23 @@ const Container = styled('div')`
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar {
+    width: 12px;
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #d62929;
+  }
 `;
 
 const StyledDiv = styled('div')`
@@ -55,7 +72,7 @@ class Team extends React.Component {
           </Heading>
           <SubSection>
             <Heading h="h2"> DJs </Heading>
-            <Container>
+            <Scrollbars autoHide renderView={Cont}>
               {!isEmpty(djs.items) &&
                 djs.items.map(dj => (
                   <TeamMember
@@ -64,7 +81,7 @@ class Team extends React.Component {
                     key={dj.sys.createdAt}
                   />
                 ))}
-            </Container>
+            </Scrollbars>
           </SubSection>
           <SubSection>
             <Heading h="h2"> SALES </Heading>

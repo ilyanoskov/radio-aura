@@ -28,17 +28,24 @@ const StyledAnchorLink = styled(AnchorLink)`
   }
 `;
 
+const Container = styled('div')`
+  align-self: flex-end;
+`;
+
 export default class Example extends React.Component {
   render() {
     return (
-      <div>
+      <Container>
         <Navbar color="#3C1041" light expand="md">
           <Nav className="ml-auto" navbar>
-            <NavItem>
+            {/*
+           <NavItem>
               <StyledAnchorLink href="#shows" mhidden>
                 Shows & Podcasts
               </StyledAnchorLink>
             </NavItem>
+            */}
+
             <NavItem>
               <StyledAnchorLink href="#team" mhidden>
                 Team
@@ -52,7 +59,7 @@ export default class Example extends React.Component {
             </NavItem>
           </Nav>
         </Navbar>
-      </div>
+      </Container>
     );
   }
 }
