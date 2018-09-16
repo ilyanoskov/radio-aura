@@ -21,12 +21,6 @@ const Container = styled.div`
   }
 `;
 
-const Image = styled.img`
-  position: relative;
-  z-index: -1;
-  left: 0px;
-`;
-
 const Yellow = styled('span')`
   color: yellow;
 `;
@@ -35,13 +29,15 @@ const FirstHeading = styled('h1')`
   position: absolute;
   z-index: 3;
   top: 215px;
-  margin-left: 30px;
+  margin-left: 20px;
   font-size: 58px;
   font-weight: 900;
 
   width: 500px;
   @media only screen and (max-width: 768px) {
-    top: 10px;
+    top: 30px;
+    margin-left: -40px;
+    font-size: 48px;
   }
 `;
 
@@ -53,7 +49,9 @@ const SecondHeading = styled('h1')`
   font-weight: 900;
   width: 500px;
   @media only screen and (max-width: 768px) {
-    top: 95px;
+    top: 105px;
+    font-size: 32px;
+    margin-left: -40px;
   }
 `;
 
@@ -66,7 +64,41 @@ const ThirdHeading = styled('h1')`
   font-weight: 900;
   width: 290px;
   @media only screen and (max-width: 768px) {
-    top: 170px;
+    top: 160px;
+    margin-left: 60px;
+    font-size: 32px;
+  }
+`;
+
+const FirstImage = styled('img')`
+  position: relative;
+  z-index: -1;
+  left: 0px;
+  width: 500px;
+  @media only screen and (max-width: 768px) {
+    width: 400px;
+  }
+`;
+
+const SecondImage = styled('img')`
+  position: relative;
+  z-index: -1;
+  left: 0px;
+  width: 400px;
+
+  @media only screen and (max-width: 768px) {
+    width: 300px;
+  }
+`;
+
+const ThirdImage = styled('img')`
+  position: relative;
+  z-index: -1;
+  left: 0px;
+  width: 300px;
+
+  @media only screen and (max-width: 768px) {
+    width: 200px;
   }
 `;
 
@@ -74,16 +106,16 @@ const Hero = () => (
   <Container>
     {' '}
     <div>
-      <Image style={{ width: '500px' }} src="/rect1.svg" />
+      <FirstImage src="/rect1.svg" />
       <FirstHeading>
         {' '}
         This is <Yellow>Radio AURA</Yellow>{' '}
       </FirstHeading>
-      <Image style={{ width: '400px' }} src="/rect2.svg" />
+      <SecondImage src="/rect2.svg" />
       <SecondHeading>
         We Know <Yellow>Good Music</Yellow>
       </SecondHeading>
-      <Image style={{ width: '300px' }} src="/rect3.svg" />
+      <ThirdImage src="/rect3.svg" />
       <ThirdHeading>
         Since <Yellow>1992</Yellow>
       </ThirdHeading>
