@@ -78,7 +78,8 @@ injectGlobal`
 
   body {
     background-color : #3C1041 !important;
-    font-family: 'Ostrich Sans' !important;
+		font-family: 'Ostrich Sans' !important;
+		overflow-x: hidden;
   }
 
   h1 {

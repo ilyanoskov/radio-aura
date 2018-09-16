@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactHowler from 'react-howler';
 
-import { Button } from 'reactstrap';
-
 class Radio extends React.Component {
   constructor(props) {
     super(props);
