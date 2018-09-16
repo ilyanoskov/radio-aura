@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink
-} from 'reactstrap';
+import { Navbar, Nav, NavItem } from 'reactstrap';
 
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 

@@ -34,8 +34,17 @@ class Radio extends React.Component {
           playing={this.state.playing}
           html5
         />
-        <Button onClick={this.handlePlay}>Play</Button>
-        <Button onClick={this.handlePause}>Pause</Button>
+        {this.state.playing ? (
+          <img
+            onClick={this.handlePause}
+            src="/pause.svg#svgView(viewBox(0,0,500,300))"
+          />
+        ) : (
+          <img
+            onClick={this.handlePlay}
+            src="/play.svg#svgView(viewBox(0,0,500,300))"
+          />
+        )}
       </div>
     );
   }

@@ -92,14 +92,12 @@ injectGlobal`
 
 `;
 
-class App extends Component {
-  render() {
-    return (
-      <Router>
-        <Route path="/" component={Home} />
-      </Router>
-    );
-  }
+function App() {
+  return (
+    <Router>
+      <Route path="/" component={Home} />
+    </Router>
+  );
 }
 
 export default App;
