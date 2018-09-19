@@ -15,6 +15,7 @@ const Image = styled('img')`
   height: 150px;
   width: 150px;
   object-fit: cover;
+  border-radius: 50%;
 
   margin: 10px;
   transition: 0.2s ease;
