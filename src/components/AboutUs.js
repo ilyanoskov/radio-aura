@@ -24,10 +24,7 @@ const Container = styled('div')`
 
 const AboutUs = () => (
   <Section id="about">
-    <Heading h="h1" style={{ padding: 0 }}>
-      {' '}
-      About Us{' '}
-    </Heading>
+    <Heading h="section"> About Us </Heading>
 
     <Container>
       <StyledText>

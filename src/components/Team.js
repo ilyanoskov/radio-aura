@@ -66,12 +66,12 @@ class Team extends React.Component {
     return (
       <StyledDiv>
         <Section id="team">
-          <Heading h="h1" style={{ padding: '0' }}>
+          <Heading h="section" style={{ padding: '0' }}>
             {' '}
             Team{' '}
           </Heading>
           <SubSection>
-            <Heading h="h2"> DJs </Heading>
+            <Heading h="section2"> DJs </Heading>
             <Scrollbars autoHide renderView={Cont}>
               {!isEmpty(djs.items) &&
                 djs.items.map(dj => (
@@ -84,7 +84,10 @@ class Team extends React.Component {
             </Scrollbars>
           </SubSection>
           <SubSection>
-            <Heading h="h2"> SALES </Heading>
+            <Heading h="section2" style={{ textAlign: 'right' }}>
+              {' '}
+              SALES{' '}
+            </Heading>
             <Scrollbars autoHide renderView={Cont}>
               {!isEmpty(sales.items) &&
                 sales.items.map(sale => (
@@ -97,7 +100,7 @@ class Team extends React.Component {
             </Scrollbars>
           </SubSection>
           <SubSection>
-            <Heading h="h2" style={{ margin: 0 }}>
+            <Heading h="section2" style={{ margin: 0 }}>
               {' '}
               Producers{' '}
             </Heading>

@@ -12,7 +12,34 @@ const Container = styled.div`
   }
 `;
 
+const SectionHeading = styled.div`
+  color: black;
+  padding: 10px;
+  font-family: 'Ostrich Sans';
+  font-weight: 900 !important;
+  font-size: 48px;
+  background: url('/HeaderRect1.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+`;
+
+const SectionHeading2 = styled.div`
+  color: black;
+  padding: 10px;
+  font-family: 'Ostrich Sans';
+  font-weight: 900 !important;
+  font-size: 36px;
+  background: url('/HeaderRect4.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+`;
+
 const Heading = ({ h, style, children }) => {
+  if (h === 'section') return <SectionHeading>{children}</SectionHeading>;
+
+  if (h === 'section2') return <SectionHeading2>{children}</SectionHeading2>;
   const H = React.createElement(h, { style }, children);
   return <Container>{H}</Container>;
 };
