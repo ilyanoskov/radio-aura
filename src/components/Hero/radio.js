@@ -28,7 +28,7 @@ class Radio extends React.Component {
     return (
       <div>
         <ReactHowler
-          src="http://ice1.somafm.com/groovesalad-128-mp3"
+          src={['http://149.13.0.80/aura.ogg', 'http://149.13.0.80/aura.mp3']}
           playing={this.state.playing}
           html5
         />
