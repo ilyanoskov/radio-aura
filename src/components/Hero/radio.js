@@ -1,5 +1,15 @@
 import React from 'react';
 import ReactHowler from 'react-howler';
+import styled from 'react-emotion';
+
+const Container = styled('div')`
+  margin-left: 100px;
+
+  @media only screen and (max-width: 768px) {
+    margin-top: 100px;
+    margin-left: 0px;
+  }
+`;
 
 class Radio extends React.Component {
   constructor(props) {
@@ -26,24 +36,18 @@ class Radio extends React.Component {
 
   render() {
     return (
-      <div>
+      <Container>
         <ReactHowler
           src={['http://149.13.0.80/aura.ogg', 'http://149.13.0.80/aura.mp3']}
           playing={this.state.playing}
           html5
         />
         {this.state.playing ? (
-          <img
-            onClick={this.handlePause}
-            src="/pause.svg#svgView(viewBox(0,0,500,300))"
-          />
+          <img onClick={this.handlePause} src="/pause.svg" />
         ) : (
-          <img
-            onClick={this.handlePlay}
-            src="/play.svg#svgView(viewBox(0,0,500,300))"
-          />
+          <img onClick={this.handlePlay} src="/play.svg" />
         )}
-      </div>
+      </Container>
     );
   }
 }

@@ -22,6 +22,8 @@ const SectionHeading = styled.div`
   background-repeat: no-repeat;
   background-size: 100% 100%;
   text-align: center;
+  max-width: 300px;
+  margin: auto;
 `;
 
 const SectionHeading2 = styled.div`
@@ -34,6 +36,8 @@ const SectionHeading2 = styled.div`
   background-repeat: no-repeat;
   background-size: 100% 100%;
   text-align: center;
+  margin: auto;
+  max-width: 300px;
 `;
 
 const Heading = ({ h, style, children }) => {
