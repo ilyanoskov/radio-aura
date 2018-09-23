@@ -76,6 +76,13 @@ injectGlobal`
 	font-style: italic;
 }
 
+@font-face {
+	font-family: 'Futura Md BT Medium';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Futura Md BT Medium'), url('fonts/futuram.woff') format('woff');
+	}
+
   body {
     background-color : #3C1041 !important;
 		font-family: 'Ostrich Sans' !important;

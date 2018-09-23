@@ -35,10 +35,24 @@ const TeamMember = ({ name, photo }) => {
   return (
     <Container>
       <Image src={photo || 'https://picsum.photos/150/150'} />
-      <Heading style={{ textAlign: 'center' }} h="h3">
+      <Heading
+        style={{
+          textAlign: 'center',
+          fontFamily: 'Futura Md BT Medium',
+          fontSize: '14pt'
+        }}
+        h="h3"
+      >
         {names[0] || 'Team Member'}
       </Heading>
-      <Heading style={{ textAlign: 'center' }} h="h3">
+      <Heading
+        style={{
+          textAlign: 'center',
+          fontFamily: 'Futura Md BT Medium',
+          fontSize: '12pt'
+        }}
+        h="h3"
+      >
         {names[1] || 'Team Member'}
       </Heading>
     </Container>

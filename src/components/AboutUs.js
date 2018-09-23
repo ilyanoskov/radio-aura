@@ -10,6 +10,7 @@ const StyledText = styled('p')`
   text-align: left;
   font-size: 18pt;
   max-width: 500px;
+  font-family: 'Futura Md BT Medium';
 `;
 
 const Container = styled('div')`
