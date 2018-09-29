@@ -35,7 +35,7 @@ const FirstHeading = styled('h1')`
 
   width: 500px;
   @media only screen and (max-width: 768px) {
-    top: 60px;
+    top: 125px;
     margin-left: -50px;
     font-size: 42px;
   }
@@ -49,7 +49,7 @@ const SecondHeading = styled('h1')`
   font-weight: 900;
   width: 500px;
   @media only screen and (max-width: 768px) {
-    top: 120px;
+    top: 190px;
     font-size: 32px;
     margin-left: -40px;
   }
@@ -64,8 +64,8 @@ const ThirdHeading = styled('h1')`
   font-weight: 900;
   width: 290px;
   @media only screen and (max-width: 768px) {
-    top: 170px;
-    margin-left: 60px;
+    top: 240px;
+    margin-left: 55px;
     font-size: 32px;
   }
 `;

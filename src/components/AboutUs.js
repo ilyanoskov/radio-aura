@@ -8,7 +8,7 @@ const StyledText = styled('p')`
   color: yellow;
   margin: 30px;
   text-align: left;
-  font-size: 18pt;
+  font-size: 14pt;
   max-width: 500px;
   font-family: 'Futura Md BT Medium';
 `;
